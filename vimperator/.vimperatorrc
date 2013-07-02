@@ -1,0 +1,62 @@
+set titlestring=Firefox
+
+set editor='/Applications/MacVim.app/Contents/MacOS/Vim -f -g'
+
+set visualbell
+
+set gui=none
+
+set scrollbars=false
+
+set focuscontent
+
+set fullscreen
+
+let mapleader = ","
+let g:mapleader = ","
+
+map s :open g<Space>
+map S :tabopen g<Space>
+
+noremap j 5j
+noremap k 5k
+
+noremap J j
+noremap K k
+
+noremap L l
+noremap H h
+
+noremap h gT
+noremap l gt
+
+noremap r R
+noremap R r
+
+noremap d D
+noremap D d
+
+noremap gh gH
+noremap gH gh
+
+nm<Leader>t :js liberator.echo(Date());<CR>
+
+colorscheme zenburn.perso
+
+map <leader>q :qmark<Space>
+map <leader>o go
+map <leader>b :bmarks<Space>
+map <leader>fs :set fullscreen!<cr>
+map <leader>e :emenu Tools.Add to Evernote<cr>
+map <leader>ec :emenu Tools.Clearly<cr>
+map <leader>ab :emenu Bookmarks.Bookmark This Page<cr>
+qmark z http://www.zhihu.com/
+qmark d http://www.douban.com/update/
+qmark 1 http://www.dmzj.com/update_1.shtml
+qmark b http://www.bilibili.tv/video/bangumi.html
+qmark j http://www.jing.fm/
+
+
+:command! -nargs=+ lazy autocmd VimperatorEnter .* &lt;args>
+:lazy fmaps -u='http://code.google.com/p/vimperator-labs/issues/list' o j k
+:lazy fmaps -u='http://code.google.com/p/vimperator-labs/issues/detail' u
