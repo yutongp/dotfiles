@@ -75,6 +75,8 @@ setopt ALWAYS_TO_END
 
 autoload zmv
 
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
 
 #bindkey -v
 ## add some readline keys back
