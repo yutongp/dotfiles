@@ -57,11 +57,16 @@ Bundle 'gmarik/vundle'
 Bundle 'c.vim'
 Bundle 'vim-perl/vim-perl'
 Bundle 'plasticboy/vim-markdown'
+Bundle 'digitaltoad/vim-jade'
+Bundle 'othree/html5.vim'
+Bundle 'derekwyatt/vim-scala'
+Bundle 'dart-lang/dart-vim-plugin'
+Bundle 'editorconfig/editorconfig-vim'
 
 " --- web dev ---
 Bundle 'skammer/vim-css-color'
 Bundle 'hail2u/vim-css3-syntax'
-Bundle 'mattn/zencoding-vim'
+Bundle 'mattn/emmet-vim'
 "Bundle 'othree/javascript-libraries-syntax.vim'
 
 " --- dev tools ---
@@ -245,7 +250,7 @@ set tw=0
 
 set ai "Auto indent
 set si "Smart indent
-set cindent 
+set cindent
 set wrap "Wrap lines
 "set nowrap
 
